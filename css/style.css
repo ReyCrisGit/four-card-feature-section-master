@@ -1,0 +1,131 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --font1: "Poppins", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+    background-color: var(--very-light-gray);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    gap: 30px;
+}
+.container_texts {
+    text-align: center;
+    /* padding: 1em; */
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.38rem;
+}
+.title_text:nth-child(1) {
+    font-weight: 200;
+    color: var(--grayish-blue);
+}
+.title_text:nth-child(2) {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+.paragraph {
+    font-size: .9rem;
+    color: var(--grayish-blue);
+}
+.paragraph_container {
+    font-size: .9rem;
+    color: var(--grayish-blue);
+}
+.container_aux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container_items {
+    max-width: 320px;
+}
+.item {
+    background-color: var(--very-light-gray);
+    box-shadow: var(--grayish-blue) 0 5px 10px;
+    position: relative;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 1em 1.4em;
+    border-top: 5px solid var(--cyan);
+}
+.item_2 {
+    border-top: 5px solid var(--red);
+}
+.item_3 {
+    border-top: 5px solid var(--orange);
+}
+.item_4 {
+    border-top: 5px solid var(--blue);
+}
+.title_item {
+    color: var(--very-dark-blue);
+}
+.container_img {
+    margin-top: 30px;
+}
+.img {
+    display: block;
+    margin-left: auto;
+}
+
+@media (min-width: 800px) {
+    .title_container {
+        display: flex;
+        flex-direction: column;
+        font-size: 24pt;
+    }
+    .paragraph_container {
+        width: 480px;
+        margin: 0 auto;
+    }
+    .container_aux {
+        position: relative;
+        flex-direction: row;
+        height: 430px;
+        width: 1024px;
+        max-width: 1024px;
+        margin: 0 auto;
+
+    }
+    .container_items {
+        width: 320px;
+        height: 200px;
+    }
+    .item {
+        position: absolute;
+        width: 320px;
+    }
+    .item_1 {
+        left: 0;
+    }
+    .item_2 {
+        top: 0;
+        left: 355px;
+
+    }
+    .item_3 {
+        bottom: 0;
+        left: 355px;
+    }
+    .item_4 {
+        right: 0;
+    }
+    
+}
